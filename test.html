@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Two Slideshows — Fixed</title>
+<style>
+/* --- basic CSS from yours --- */
+* { box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 24px auto;
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  user-select: none;
+  background: rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+/* left/right positions */
+.prev { left: 8px; }
+.next { right: 8px; }
+
+/* On hover, darker background */
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.7); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Dots */
+.dot, .dot2 {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover, .dot2:hover { background-color: #717171; }
+
+/* Fade animation */
+.fade { animation-name: fade; animation-duration: 0.8s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+/* responsive image */
+.slideshow-container img { width:100%; height:auto; display:block; }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Slideshow A</h2>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="1slide1.jpeg" alt="slide1">
+    <div class="text jost">Eat healthy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="1slide2.jpeg" alt="slide2">
+    <div class="text jost">Set goals and create a mental health plan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="1slide3.jpeg" alt="slide3">
+    <div class="text jost">Practice balance and mindfulness</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="1slide4.jpeg" alt="slide4">
+    <div class="text jost">Express emotions in healthy ways</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="1slide5.jpeg" alt="slide5">
+    <div class="text jost">Do hobbies and things you enjoy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="1slide6.jpeg" alt="slide6">
+    <div class="text jost">Build supportive friendships</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="1slide7.jpeg" alt="slide7">
+    <div class="text jost">Rest and ask for help when needed</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="1slide8.jpeg" alt="slide8">
+    <div class="text jost">Practice good hygiene</div>
+  </div>
+
+  <!-- ARROWS pass slideshow index 0 -->
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center; margin-bottom:32px;">
+  <span class="dot" onclick="currentSlide(1, 0)"></span>
+  <span class="dot" onclick="currentSlide(2, 0)"></span>
+  <span class="dot" onclick="currentSlide(3, 0)"></span>
+  <span class="dot" onclick="currentSlide(4, 0)"></span>
+  <span class="dot" onclick="currentSlide(5, 0)"></span>
+  <span class="dot" onclick="currentSlide(6, 0)"></span>
+  <span class="dot" onclick="currentSlide(7, 0)"></span>
+  <span class="dot" onclick="currentSlide(8, 0)"></span>
+</div>
+
+<hr>
+
+<h2 style="text-align:center">Slideshow B</h2>
+
+<div class="slideshow-container">
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="2slide1.jpeg" alt="2slide1">
+    <div class="text jost">Be open-minded and understanding</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="2slide2.jpeg" alt="2slide2">
+    <div class="text jost">Listen actively and respectfully</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="2slide3.jpeg" alt="2slide3">
+    <div class="text jost">Show gratitude and celebrate others</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="2slide4.jpeg" alt="2slide4">
+    <div class="text jost">Offer support and encouragement</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="2slide5.jpeg" alt="2slide5">
+    <div class="text jost">Be honest and keep your promises</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="2slide6.jpeg" alt="2slide6">
+    <div class="text jost">Apologize when necessary</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="2slide7.jpeg" alt="2slide7">
+    <div class="text jost">Show empathy, kindness, and compassion</div>
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="2slide8.jpeg" alt="2slide8">
+    <div class="text jost">Spread positivity instead of hate</div>
+  </div>
+
+  <!-- ARROWS pass slideshow index 1 -->
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center; margin-bottom:32px;">
+  <span class="dot2" onclick="currentSlide(1, 1)"></span>
+  <span class="dot2" onclick="currentSlide(2, 1)"></span>
+  <span class="dot2" onclick="currentSlide(3, 1)"></span>
+  <span class="dot2" onclick="currentSlide(4, 1)"></span>
+  <span class="dot2" onclick="currentSlide(5, 1)"></span>
+  <span class="dot2" onclick="currentSlide(6, 1)"></span>
+  <span class="dot2" onclick="currentSlide(7, 1)"></span>
+  <span class="dot2" onclick="currentSlide(8, 1)"></span>
+</div>
+
+<script>
+/* single declaration for slideIndex array */
+let slideIndex = [1, 1];
+const slideClass = ["mySlides", "mySlides2"];
+const dotClass = ["dot", "dot2"];
+
+/* initialize when DOM is ready */
+document.addEventListener("DOMContentLoaded", function () {
+  showSlides(1, 0);
+  showSlides(1, 1);
+});
+
+/* control functions accept (n, slideshowIndex) */
+function plusSlides(n, slideshow) {
+  showSlides(slideIndex[slideshow] += n, slideshow);
+}
+function currentSlide(n, slideshow) {
+  showSlides(slideIndex[slideshow] = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  const slides = document.getElementsByClassName(slideClass[slideshow]);
+  const dots = document.getElementsByClassName(dotClass[slideshow]);
+
+  if (slides.length === 0) return; // nothing to do if no slides found
+
+  if (n > slides.length) { slideIndex[slideshow] = 1; }
+  if (n < 1) { slideIndex[slideshow] = slides.length; }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex[slideshow] - 1].style.display = "block";
+  if (dots.length >= slideIndex[slideshow]) {
+    dots[slideIndex[slideshow] - 1].className += " active";
+  }
+}
+</script>
+
+</body>
+</html>

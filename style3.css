@@ -1,0 +1,340 @@
+/* font used */
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+}
+
+/* to make the margin zero */
+*{
+    margin: 0%;
+}
+
+/* css for the top part (the submitted part) */
+header#top{
+    background-color: rgb(223, 69, 69);
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+/* css for the bottom part (here lies the sources) */
+footer{
+    background-color: rgb(223, 69, 69);
+    text-align: center;
+    padding: 10px;
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#sources{
+    color: rgb(255, 255, 255);
+}
+
+/* css for the bg of the navbar*/
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(249, 203, 67);
+}
+
+/* css for the logo*/
+#logo{
+    border-radius: 15px; 
+    width: 100px; 
+    height: 100px;
+    margin-left: 90px;
+}
+
+/* css for the logo */
+#title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(60, 152, 21);
+    margin-right: 985px;
+    text-align: center;
+}
+
+/* css for the navigation links*/
+
+nav{
+    text-align: right;
+    position: absolute;
+    top: 120px;
+    right: 45px;
+    color: rgb(75, 165, 37);
+    font-size: 160%;
+}
+
+/* css for the navlinks specifically for the text*/
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+/* to make the navlinks be underlined when hovered*/
+.links:hover {
+    text-decoration: underline;
+}
+
+/* css for the whole page*/
+main{
+    background-color: rgb(223, 69, 69);
+}
+
+p{
+    text-align: justify;
+}
+
+section:nth-of-type(odd) {
+  background-color: rgb(251, 95, 95);
+    overflow: auto;
+}
+
+section:nth-of-type(even) {
+  background-color: rgb(243, 85, 85);
+    overflow: auto;
+}
+
+#flowers{
+    width: 65%;
+    border-radius: 15px;
+    margin: 15px;
+    margin-left: 230px;
+}
+
+.headerint{
+    background-color: #f7c73a;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 525px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    text-align: center;
+    color:rgb(75, 165, 37);
+}
+
+.inttext{
+    font-size: 120%;
+    width: 90%;
+    color:rgb(75, 165, 37);
+    background-color: rgb(247, 199, 58);
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.headeryourself{
+    background-color: rgb(247, 199, 58);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    text-align: center;
+    color:rgb(75, 165, 37);
+}
+
+.yourselftext{
+    font-size: 120%;
+    width: 90%;
+    color:rgb(75, 165, 37);
+    background-color: rgb(247, 199, 58);
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.headerothers{
+    background-color: rgb(247, 199, 58);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    text-align: center;
+    color:rgb(75, 165, 37);
+}
+
+.otherstext{
+    font-size: 120%;
+    width: 90%;
+    color:rgb(75, 165, 37);
+    background-color: rgb(247, 199, 58);
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.headerconc{
+    background-color: rgb(247, 199, 58);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 525px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    text-align: center;
+    color:rgb(75, 165, 37);
+}
+
+.conctext{
+    font-size: 120%;
+    width: 90%;
+    color:rgb(75, 165, 37);
+    background-color: rgb(247, 199, 58);
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+article{
+    background-color: rgb(237, 233, 209);
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 385px;
+    width: 40%;
+    overflow: auto;
+}
+
+.headerconc2{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 95px;
+    width: 60%;
+    text-align: center;
+    color:rgb(66, 6, 6);
+}
+
+.eyes, .mouth{
+    font-size: 700%;
+    float: left;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.eyes{
+    padding-left: 25px;
+}
+
+.mouth{
+    transition: transform 0.5s ease;
+    margin-top: 5px;
+}
+
+.face{
+    background-color: rgb(247, 199, 58);
+    border-radius: 100px;
+    transform: rotate(90deg);
+    margin-left: 175px;
+    position: relative;
+    top: -30px;
+    width: 150px;
+    height: 180px;
+}
+
+.face:hover .mouth{
+    transform: rotate(180deg);
+}
+
+* { box-sizing: border-box; }
+
+.slideshow-container,
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: 24px auto;
+  height: 550px; /* <-- FIXED HEIGHT */
+  overflow: hidden; /* prevent images from stretching outside */
+}
+
+.mySlides img,
+.mySlides2 img {
+  height: 100%;     /* fill the container height */
+  width: 100%;      /* keep full width */
+  object-fit: cover; /* keeps proportions without distortion */
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next, .prev2, .next2{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  user-select: none;
+  background: rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+/* left/right positions */
+.prev, .prev2 { left: 8px; }
+.next, .next2 { right: 8px; }
+
+/* On hover, darker background */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover{ background-color: rgba(0,0,0,0.7); }
+
+/* Caption text */
+.text, .text2 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Number text (1/3 etc) */
+.numbertext, .numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Dots */
+.dot, .dot2 {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover, .dot2:hover { background-color: #717171; }
+
+/* Fade animation */
+.fade { animation-name: fade; animation-duration: 0.8s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+/* responsive image */
+.slideshow-container img { width:100%; height:auto; display:block; }
